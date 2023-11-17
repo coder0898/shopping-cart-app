@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Button, Form } from "react-bootstrap";
 
 const Filter = () => {
   return (
@@ -56,12 +57,7 @@ const Filter = () => {
       </span> */}
       <Button
         variant="light"
-        onClick={() =>
-          productDispatch({
-            type: "CLEAR_FILTERS",
-          })
-        }
-      >
+        >
         Clear Filters
       </Button>
       </div>

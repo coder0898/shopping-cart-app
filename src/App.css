@@ -62,6 +62,10 @@
     background-color: #6610f2;
 }
 
+.home {
+    display: flex;
+  }
+  
 .filters {
     background-color: #343a40;
     color: white;
