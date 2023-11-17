@@ -5,65 +5,10 @@
     width: 100%;
 }
 
-.card-container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10px;
-    grid-gap: 2.5rem;
-}
-
-.card{
-    width: 18rem;
-    border-radius: .5rem;
-    border: 1px solid #ccc;
-}
-
-.cardImg{
-    width: 100%;
-}
-
-.cardImg img{
-    width: 100%;
-}
-
-.cardHeader{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-.cardHeader h3{
-    margin-bottom: 0;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.button-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin-bottom: 8px;
-}
-
-.button-box button{
-    width: 100%;
-    height: 35px;
-    font-size: 18px;
-    background-color: #007bff;
-    border: none;
-    outline: none;
-    color: #fff;
-    border-radius: 5px;
-}
-
-.button-box button:hover{
-    background-color: #6610f2;
-}
 
 .home {
     display: flex;
+    width: 100%;
   }
   
 .filters {
@@ -72,9 +17,9 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    width: 20%;
-    margin: 10px;
+    width: 50%;
     height: 86vh;
+    margin-left: 0;
   }
   
   .filters > span {
