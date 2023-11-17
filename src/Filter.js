@@ -11,13 +11,6 @@ const Filter = () => {
           name="group1"
           type="radio"
           id={`inline-1`}
-          onChange={() =>
-            productDispatch({
-              type: "SORT_BY_PRICE",
-              payload: "lowToHigh",
-            })
-          }
-          checked={sort === "lowToHigh" ? true : false}
         />
       </span>
       <span>
@@ -27,13 +20,6 @@ const Filter = () => {
           name="group1"
           type="radio"
           id={`inline-2`}
-          onChange={() =>
-            productDispatch({
-              type: "SORT_BY_PRICE",
-              payload: "highToLow",
-            })
-          }
-          checked={sort === "highToLow" ? true : false}
         />
       </span>
       <span>
@@ -43,12 +29,6 @@ const Filter = () => {
           name="group1"
           type="checkbox"
           id={`inline-3`}
-          onChange={() =>
-            productDispatch({
-              type: "FILTER_BY_STOCK",
-            })
-          }
-          checked={byStock}
         />
       </span>
       <span>
@@ -58,15 +38,10 @@ const Filter = () => {
           name="group1"
           type="checkbox"
           id={`inline-4`}
-          onChange={() =>
-            productDispatch({
-              type: "FILTER_BY_DELIVERY",
-            })
-          }
-          checked={byFastDelivery}
+          
         />
       </span>
-      <span>
+      {/* <span>
         <label style={{ paddingRight: 10 }}>Rating: </label>
         <Rating
           rating={byRating}
@@ -78,7 +53,7 @@ const Filter = () => {
           }
           style={{ cursor: "pointer" }}
         />
-      </span>
+      </span> */}
       <Button
         variant="light"
         onClick={() =>
