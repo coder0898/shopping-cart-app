@@ -2,7 +2,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Scroll bar */
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.card-container{
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    grid-gap: 5rem;
 }
 
 
@@ -17,7 +37,8 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 20%;
+    margin: 20px;
     height: 86vh;
     margin-left: 0;
   }

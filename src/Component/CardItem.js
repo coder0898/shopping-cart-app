@@ -4,10 +4,10 @@ import Rating from './Rating';
 
 const CardItem = ({ item }) => (
     <div>
-        <Card key={item.id}>
-            <Card.Img variant="top" src={item.image} alt="404" />
+        <Card key={item.id} style={{ width: "20rem"}}>
+            <Card.Img variant="top" src={item.imgsrc} alt="404" />
             <Card.Body>
-                <Card.Title>{item.name}</Card.Title>
+                <Card.Title>{item.title}</Card.Title>
                 <Card.Subtitle style={{ paddingBottom: 10 }}>
                     <span>₹ {item.price.split(".")[0]}</span>
                     {item.fastDelivery ? (
@@ -17,18 +17,15 @@ const CardItem = ({ item }) => (
                     )}
                     <Rating rating={item.ratings} />
                 </Card.Subtitle>
-                {/* {cart.some((p) => p.id === item.id) ? (
                     <Button
                         variant="danger"
                     >
                         Remove from Cart
                     </Button>
-                ) : (
                     <Button
                     >
                         {!item.inStock ? "Out of Stock" : "Add to Cart"}
                     </Button>
-                )} */}
             </Card.Body>
         </Card>
     </div>

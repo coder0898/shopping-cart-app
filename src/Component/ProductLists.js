@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { CartState } from '../Context/Context';
 import CardItem from './CardItem';
 
@@ -15,7 +14,7 @@ const ProductLists = () => {
                 products.map((item) => {
                     return (
                         <>
-                            <CardItem item={item}/>
+                            <CardItem  item={item}/>
                         </>
                     )
                 })
