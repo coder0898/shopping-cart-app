@@ -1,9 +1,13 @@
 .App{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.head-content{
+  width: 100%;
+}
 /* Scroll bar */
 body::-webkit-scrollbar {
   width: 5px;
