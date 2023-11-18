@@ -43,13 +43,13 @@ const Header = () => {
           </Navbar.Text>
         )}
         <Nav>
-          <Dropdown alignRight>
+          <Dropdown align='end'>
             <Dropdown.Toggle variant="success">
               <FaShoppingCart color="white" fontSize="25px" />
               <Badge>{cart.length}</Badge>
             </Dropdown.Toggle>
 
-            <Dropdown.Menu style={{ minWidth: "370px"}}>
+            <Dropdown.Menu style={{ minWidth: 370 }}>
               {cart.length > 0 ? (
                 <>
                   {cart.map((prod) => (

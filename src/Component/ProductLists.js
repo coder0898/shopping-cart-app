@@ -1,20 +1,17 @@
 import React from 'react';
-import { CartState } from '../Context/Context';
 import CardItem from './CardItem';
 
 
-const ProductLists = () => {
+const ProductLists = ({ transformProducts}) => {
 
-    const {state: { products } } = CartState();
 
-    
     return (
-        <div className='card-container'>
+        <div className='ProductContainer'>
             {
-                products.map((item) => {
+             transformProducts().map((item) => {
                     return (
                         <>
-                            <CardItem  item={item}/>
+                            <CardItem  item={item} key={item.id}/>
                         </>
                     )
                 })
